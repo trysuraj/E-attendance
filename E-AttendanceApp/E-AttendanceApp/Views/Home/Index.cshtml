@@ -1,0 +1,54 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <form method="post" asp-action="index" asp-controller="Home">
+        <div class="row m-1">
+            <label for="FirstName" class="form-label">First Name</label>
+            <input type="text" class="form-control" name="FirstName">
+        </div>
+        <div class="row m-2">
+            <label for="lastName" class="form-label">Last Name</label>
+            <input type="text" class="form-control" name="lastName">
+        </div>
+        <div class="row m-2">
+            <label for="Email" class="form-label">Email Address</label>
+            <input type="email" class="form-control" name="Email" placeholder="Johndoe@gmail.com">
+        </div>
+        <div class="row m-2">
+            <label for="Phone" class="form-label">Phone Number</label>
+            <input type="number" class="form-control" name="Phone" placeholder="+234-8012345678">
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="Gender" id="gridRadios1" value="0" checked>
+            <label class="form-check-label" for="gridRadios1">
+                Male
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="Gender" id="gridRadios2" value="1">
+            <label class="form-check-label" for="gridRadios2">
+                Female
+            </label>
+            <div class="row m-2">
+                <label for="Stack" class="form-label">Stack</label>
+                <select id="Stack" class="form-select" name=" Stack">
+                    <option selected>Choose Stack</option>
+                    <option value="0">Dot Net</option>
+                    <option value="1">Java</option>
+                    <option value="2">Node</option>
+                    <option value="3">Python</option>
+                    <option value="4">IOS</option>
+                    <option value="5">Android</option>
+                </select>
+            </div>
+            
+
+        </div>
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+</div>
